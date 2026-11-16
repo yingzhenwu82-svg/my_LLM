@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LLM Wild 中文大型語言模型研究知識庫">
+  <title>LLM Wild｜中文 LLM 研究知識庫</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">LW</span><span>LLM <b>WILD</b><small>CHINESE RESEARCH WIKI</small></span></a>
+    <nav><a href="#explore">探索知識</a><a href="#about">關於 Wiki</a><a href="AGENTS.md" target="_blank">AGENTS.md ↗</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> A LIVING KNOWLEDGE BASE</div>
+        <h1>讓知識持續累積，<br><em>讓研究彼此連結。</em></h1>
+        <p>從論文、技術文章到研究觀點，探索大型語言模型的核心技術。這不是一次性的資料整理，而是一座會持續成長的中文研究 Wiki。</p>
+        <a class="hero-cta" href="#explore">開始探索 <span>↘</span></a>
+      </div>
+      <div class="hero-orbit"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-core">LLM<span>WILD</span></div><i class="node node-a">RAG</i><i class="node node-b">AGENT</i><i class="node node-c">LLM</i><i class="node node-d">研究</i></div>
+      <div class="hero-foot"><span>01 / EXPLORE</span><span>KNOWLEDGE THAT COMPOUNDS</span></div>
+    </section>
+    <section class="stats">
+      <div><strong id="total-count">07</strong><span>知識主題</span></div><div><strong>03</strong><span>知識分類</span></div><div><strong>∞</strong><span>持續擴充</span></div>
+      <p>從理解基礎開始，逐步建立自己的 LLM 研究地圖。</p>
+    </section>
+    <section class="explore section-wrap" id="explore">
+      <div class="section-heading"><div><div class="eyebrow dark">THE KNOWLEDGE LIBRARY</div><h2>探索研究主題<span>／</span></h2></div><p>用關鍵字尋找概念，或依照研究領域瀏覽知識。</p></div>
+      <div class="search-row"><span class="search-icon">⌕</span><input id="search-input" type="search" placeholder="搜尋 LLM、RAG、Transformer..." aria-label="搜尋文章"><kbd>SEARCH</kbd></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="all">全部主題 <span>07</span></button>
+        <button class="filter" data-category="concepts">核心概念</button>
+        <button class="filter" data-category="methods">技術方法</button>
+        <button class="filter" data-category="questions">研究與評估</button>
+      </div>
+      <div class="article-grid" id="article-grid"></div>
+      <div class="empty-state" id="empty-state" hidden>找不到符合條件的主題，試試其他關鍵字。</div>
+    </section>
+    <section class="manifesto" id="about">
+      <div class="manifesto-label">WHY LLM WILD</div>
+      <div><h2>不只儲存資料，<br>而是建立<span>知識網絡。</span></h2><p>每當加入一篇新來源，AI 不只產生摘要，也會更新相關概念、補上交叉連結、記錄不同觀點，讓知識隨著研究不斷成長。</p></div>
+      <div class="manifesto-steps"><div><b>01</b><span>RAW SOURCES</span><small>保存原始來源</small></div><div><b>02</b><span>WIKI</span><small>整合與連結知識</small></div><div><b>03</b><span>SCHEMA</span><small>依照規則持續維護</small></div></div>
+    </section>
+    <section class="workflow section-wrap"><div class="eyebrow dark">A CONTINUOUS CYCLE</div><h2>讓每一次閱讀，都成為下一次研究的起點。</h2><div class="workflow-grid"><article><span>01</span><h3>收集來源</h3><p>論文、官方文件與技術文章，保留原始資訊。</p></article><article><span>02</span><h3>整合知識</h3><p>AI 整理重點、更新既有頁面並建立關聯。</p></article><article><span>03</span><h3>持續探索</h3><p>從索引出發提問，將有價值的分析存回 Wiki。</p></article></div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">LW</span><span>LLM <b>WILD</b><small>CHINESE RESEARCH WIKI</small></span></a><p>Knowledge is not collected. It is cultivated.</p><span>© 2026 LLM WILD</span></footer>
+  <script src="data/articles.js"></script><script src="js/app.js"></script>
+</body>
+</html>
